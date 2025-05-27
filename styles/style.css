@@ -25,3 +25,37 @@ img {
 }
 
 /* Custom */
+/* Color Palette */
+@property --main-blue {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #2b4162ff;
+}
+
+@property --shade-blue {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #93a3bcff;
+}
+
+
+@property --light-blue {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ccdde2ff;
+}
+
+
+@property --contrast {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ba3b46ff;
+}
+
+
+@property --dark {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #2e3138ff;
+}
+
