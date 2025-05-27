@@ -5,6 +5,11 @@
   line-height: 1.5;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
 }
@@ -29,7 +34,7 @@ img {
 @property --main-blue {
     syntax: "<color>";
     inherits: true;
-    initial-value: #2b4162ff;
+    initial-value: rgb(54, 85, 131);
 }
 
 @property --shade-blue {
@@ -59,3 +64,66 @@ img {
     initial-value: #2e3138ff;
 }
 
+body {
+  height: 100vh;
+  border: 2px solid;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  height: 100%;
+}
+
+.left {
+  background: linear-gradient(20deg, var(--contrast), var(--main-blue) 30% 70%, var(--dark));
+  color: white;
+
+  flex: 2 0 auto;
+
+  position: relative;
+}
+
+#logo-container {
+  font-family: "Bebas Neue";
+  letter-spacing: clamp(2px, 0.1rem, 10px);
+  
+  padding: 15px 0;
+  background-color: color-mix(in srgb, var(--dark) 40%, transparent);
+
+  position: absolute;
+  top: 25%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-text {
+  font-size: 4rem;
+}
+
+#credit-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0.5rem;
+
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#credit-footer p{
+  font-weight: 200;
+}
+
+#credit-footer a {
+  color: white;
+}
