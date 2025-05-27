@@ -78,6 +78,7 @@ body {
     "wdth" 100;
 }
 
+
 h1 {
   font-size: 1.7rem;
   font-weight: bold;
@@ -117,6 +118,7 @@ label, input {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 #logo-text {
@@ -192,6 +194,16 @@ label, input {
   padding: 0.5rem 0.35rem;
   border-radius: 4px;
   width: 100%;
+}
+
+.two-row input:invalid {
+  border: 1px solid var(--contrast);
+}
+
+.two-row input:focus {
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: var(--dark) 5px 5px 5px -5px;
 }
 
 #account {
